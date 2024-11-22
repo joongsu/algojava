@@ -17,7 +17,6 @@ public class virus {
         for(int i = 0 ; i<=n ; i++){
             graph.add(new ArrayList<>());
         }
-
         for(int i = 0 ; i < m ; i++){
             int u = sc.nextInt();
             int v = sc.nextInt();
