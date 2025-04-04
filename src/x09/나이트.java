@@ -1,4 +1,4 @@
-package x08;    // 7562 - 나이트의 이동
+package x09;    // 7562 - 나이트의 이동
 
 import java.io.BufferedReader;
 import java.io.IOException;

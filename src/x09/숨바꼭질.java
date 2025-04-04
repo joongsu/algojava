@@ -1,4 +1,4 @@
-package x08;    // 1697 - 숨바꼭질
+package x09;    // 1697 - 숨바꼭질
 
 import java.io.BufferedReader;
 import java.io.IOException;

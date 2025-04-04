@@ -1,4 +1,4 @@
-package x08;    // 7569 - 토마토2
+package x09;    // 7569 - 토마토2
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package x08;    // 2178 - 미로탐색
+package x09;    // 2178 - 미로탐색
 
 import java.io.BufferedReader;
 import java.io.IOException;

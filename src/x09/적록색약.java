@@ -1,4 +1,4 @@
-package x08; // 10026 - 적록색약(기본)
+package x09; // 10026 - 적록색약(기본)
 
 import java.io.BufferedReader;
 import java.io.IOException;

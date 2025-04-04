@@ -1,4 +1,4 @@
-package x08;    //1012 - 유기농배추 기본문제(체크)
+package x09;    //1012 - 유기농배추 기본문제(체크)
 
 import java.io.BufferedReader;
 import java.io.IOException;
