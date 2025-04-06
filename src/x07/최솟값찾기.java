@@ -24,6 +24,7 @@ public class 최솟값찾기 {
                 deq.pollFirst();
             }
 
+
             bw.write(deq.peek()[0] + " ");
         }
 
