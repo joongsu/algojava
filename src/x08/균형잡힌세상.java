@@ -12,36 +12,32 @@ public class 균형잡힌세상 {
 
         while (true) {
             String s = br.readLine();
-            if(s.equals(".")) break;
+            if (s.equals(".")) break;
 
             Stack<Character> stack = new Stack<>();
-
+            boolean isValid = true;
             for (int i = 0; i < s.length(); i++) {
                 char c = s.charAt(i);
 
-                if(c == '(' || c == '['){
-                    stack.push(c);
-                } else if (c == ')') {
-                    if(stack.isEmpty()){
-                        stack.push(c);
+                if (c == '(' || c == '[') stack.push(c);
+                else if (c == ')') {
+                    if (stack.isEmpty() || stack.peek() != '(') {
+                        isValid = false;
                         break;
                     }
-                    if (stack.peek() == '(') {
-                        stack.pop();
-                    }else break;
+                    stack.pop();
                 } else if (c == ']') {
-                    if(stack.isEmpty()){
-                        stack.push(c);
+                    if (stack.isEmpty() || stack.peek() != '[') {
+                        isValid = false;
                         break;
                     }
-
-                    if (stack.peek() == '[') {
-                        stack.pop();
-                    }else break;
+                    stack.pop();
                 }
             }
-            if(stack.isEmpty()) sb.append("yes").append('\n');
+            if (!stack.isEmpty()) isValid = false;
+            if (isValid) sb.append("yes").append('\n');
             else sb.append("no").append('\n');
+
         }
         System.out.print(sb);
 
