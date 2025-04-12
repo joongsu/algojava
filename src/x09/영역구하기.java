@@ -1,4 +1,4 @@
-package x08;    // 2583 - 영역 구하기
+package x09;    // 2583 - 영역 구하기
 
 import java.io.BufferedReader;
 import java.io.IOException;
