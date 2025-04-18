@@ -21,6 +21,7 @@ public class 벽부수고이동하기 {
                 dist[1][i][j] = -1;
             }
         }
+
         dist[0][0][0] = dist[1][0][0] = 1;
 
         Queue<int[]> q = new LinkedList<>();
