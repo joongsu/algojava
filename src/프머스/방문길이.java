@@ -1,7 +1,7 @@
 package 프머스;
 
 import java.util.*;
-class Main {
+class 방문길이 {
 
     static int[] dx = {-1,0,1,0};
     static int[] dy = {0,1,0,-1};
