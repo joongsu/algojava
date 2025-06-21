@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class 오큰수 {
     static int n;
     public static void main(String[] args) throws IOException {
-        // 오큰수 = 오른쪽에 있ㅇ면서 Ai 보다 큰 수 중에서 가장 왼쪽에 있는 수를 의미한다.
+        // 오큰수 = 오른쪽에 있으면서 Ai 보다 큰 수 중에서 가장 왼쪽에 있는 수를 의미한다.
         // 그러한 수가 없으면 오큰수는 -1
         Deque<Integer> stack = new ArrayDeque<>();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
