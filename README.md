@@ -1,3 +1,2 @@
-# algojava
 
-## 코딩문제풀이(JAVA)
+# 코딩문제풀이(JAVA)
