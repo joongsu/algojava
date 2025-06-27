@@ -1,4 +1,4 @@
-package x10;
+package x10;    // 14501 - 퇴사(완탐 풀이)
 
 import java.io.BufferedReader;
 import java.io.IOException;
