@@ -1,4 +1,4 @@
-package 프머스.LV2;
+package 프머스.알고리즘고득점kit.깊이너비우선탐색;
 
 class 타겟넘버 {
     static int answer;
