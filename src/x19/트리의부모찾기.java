@@ -50,6 +50,14 @@ public class 트리의부모찾기 {
             }
         }
     }
+    static void dfs(int cur) {
+        for (int nxt : adj.get(cur)) {
+            if (p[cur] == nxt) continue;
+            p[nxt] = cur;
+            dfs(nxt);
+        }
+
+    }
 
     static void addEdge(int u, int v) {
         adj.get(u).add(v);
