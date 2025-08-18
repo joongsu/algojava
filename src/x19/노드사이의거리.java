@@ -11,6 +11,7 @@ public class 노드사이의거리 {
 
     static boolean[] vis;
     static int ans;
+    static boolean found;
 
     static int s, e;
     public static void main(String[] args) throws IOException {
@@ -41,6 +42,7 @@ public class 노드사이의거리 {
             s = Integer.parseInt(st.nextToken());
             e = Integer.parseInt(st.nextToken());
             vis = new boolean[V + 1];
+            found = false;
             dfs(s, 0);
             sb.append(ans).append("\n");
         }
@@ -56,9 +58,12 @@ public class 노드사이의거리 {
         vis[cur] = true;
         if (cur == e) {
             ans = dist;
+            found = true;
+            return;
         }
 
         for (int[] nxt : adj.get(cur)) {
+            if(found) return;
             dfs(nxt[1], dist + nxt[0]);
         }
     }
